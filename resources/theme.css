@@ -1,0 +1,102 @@
+/* خلفية عامة – زهري فاتح جدًا */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: linear-gradient(
+        to bottom,
+        #f7e9ef,
+        #f3dde6
+    );
+}
+
+/* الكارد الرئيسي */
+.main-card {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        #ffffffcc,
+        #f8eef3cc
+    );
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #e8cfd9;
+    -fx-padding: 24;
+}
+
+/* العناوين */
+.label {
+    -fx-text-fill: #5a3a4a;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+
+/* TextField */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #4a2f3c;
+    -fx-prompt-text-fill: #9c7a8a;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #e2c3cf;
+    -fx-padding: 8 12;
+}
+
+/* RadioButton */
+.radio-button {
+    -fx-text-fill: #5a3a4a;
+    -fx-font-weight: 600;
+}
+.radio-button .radio {
+    -fx-border-color: #d6a5b7;
+}
+.radio-button:selected .radio .dot {
+    -fx-background-color: #d16b93;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        #e7a1bd,
+        #d98cab
+    );
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 700;
+    -fx-background-radius: 14;
+    -fx-padding: 9 18;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        #edb2c9,
+        #e29bb6
+    );
+}
+.button:pressed {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        #d27a9c,
+        #c26a8c
+    );
+}
+
+/* Pane الرسم */
+#drawPane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: #e2c3cf;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: #e2c3cf;
+}
+.text-area .content {
+    -fx-background-color: transparent;
+}
+.text-area, .text-area .content {
+    -fx-text-fill: #4a2f3c;
+}

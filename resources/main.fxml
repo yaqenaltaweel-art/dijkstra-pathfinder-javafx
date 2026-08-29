@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MainController"
+            prefWidth="900"
+            prefHeight="650"
+            stylesheets="@theme.css">
+
+    <VBox spacing="16"
+          prefWidth="700"
+          styleClass="main-card"
+          AnchorPane.leftAnchor="100"
+          AnchorPane.rightAnchor="100"
+          AnchorPane.topAnchor="40">
+
+        <!-- Start / End -->
+        <HBox spacing="12">
+            <Label text="Start:"/>
+            <TextField fx:id="tfStart" prefWidth="220"/>
+
+            <Label text="End:"/>
+            <TextField fx:id="tfEnd" prefWidth="220"/>
+        </HBox>
+
+        <!-- Options -->
+        <HBox spacing="20">
+            <RadioButton fx:id="rbDistance" text="Distance"/>
+            <RadioButton fx:id="rbTime" text="Time"/>
+            <RadioButton fx:id="rbBoth" text="Both"/>
+        </HBox>
+
+        <!-- Buttons -->
+        <HBox spacing="14">
+            <Button text="Choose File" onAction="#chooseFile"/>
+            <Button text="Run" onAction="#runAlgorithm"/>
+        </HBox>
+
+        <Label text="Path Visualization:"/>
+
+        <!-- Drawing Area -->
+        <Pane fx:id="drawPane" prefHeight="220"/>
+
+        <Label text="Output:"/>
+
+        <TextArea fx:id="output"
+                  prefHeight="200"
+                  wrapText="true"/>
+    </VBox>
+
+</AnchorPane>
